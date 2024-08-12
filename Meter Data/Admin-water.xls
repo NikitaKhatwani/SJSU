@@ -1,0 +1,2231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+<Styles>
+  <Style ss:ID="HeaderRow">
+    <Font ss:Bold="1" />
+  </Style>
+  <Style ss:ID="DT">
+     <NumberFormat ss:Format="yyyy-mm-dd hh:mm:ss"/>
+  </Style>
+  <Style ss:ID="DT0">
+     <NumberFormat ss:Format="yyyy-mm-dd hh:mm:ss &quot;PST&quot;"/>
+  </Style>
+  <Style ss:ID="DT1">
+     <NumberFormat ss:Format="yyyy-mm-dd hh:mm:ss &quot;PDT&quot;"/>
+  </Style>
+  <Style ss:ID="U0">
+     <NumberFormat ss:Format="0.0&quot;gal/min&quot;"/>
+  </Style>
+  <Style ss:ID="U1">
+     <NumberFormat ss:Format="0.0&quot;gal&quot;"/>
+  </Style>
+</Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table>
+  <Column ss:Width="140"/>
+  <Column ss:Width="140"/>
+  <Column ss:Width="140"/>
+  <Column ss:Width="140"/>
+   <Row ss:StyleID="HeaderRow">
+    <Cell><Data ss:Type="String">Timestamp</Data></Cell>
+    <Cell><Data ss:Type="String">Admin: Electricity (M) Usage - Archived</Data></Cell>
+    <Cell><Data ss:Type="String">Admin: Waterscope DW Demand (C)</Data></Cell>
+    <Cell><Data ss:Type="String">Admin: Waterscope DW Usage</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.27876388835203314</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">401.41999973356724</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26543749926430693</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">382.2299994379282</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.38492361049995655</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">554.2900012731552</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.37702777757982</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">542.9200002253056</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4307569436237423</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">620.2899997606874</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44994444359973484</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">647.9200002327561</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.37541666522803196</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">540.6000003963709</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2706180547376991</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">389.6899996101856</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26211805463794413</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">377.4499999433756</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3743402773527325</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">539.0499989613891</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.49990972351386315</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">719.8700009733438</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4657916659489274</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">670.739998921752</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.38311805279873723</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">551.6899976357818</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3455625002194817</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">497.60999958217144</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2650902770369107</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">381.729999743402</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26538194463096765</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">382.1500002890825</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3025833333118094</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">435.7199998795986</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4227499992832438</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">608.759999640286</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5228611105509723</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">752.9200007542968</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4529513894425084</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">652.2500007003546</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41228472370292163</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">593.6899999603629</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26714583190106267</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">384.6899983808398</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24840277769059563</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">357.69999972730875</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.43235416528639486</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">622.5899981111288</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41182638782386977</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">593.0299991890788</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.500583331902615</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">720.8400004059076</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42384027846209293</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">610.3299998342991</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4730555541270102</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">681.1999997124076</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2698819438163709</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.6299998089671</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.298513889273939</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">429.860000602901</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-01-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4596319442433823</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">661.8699996471405</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.493631945825958</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">710.8300012946129</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5207847187605997</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">749.92999792099</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47171527937623775</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">679.2700018361211</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">2.1519930428152696</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">3098.869987040758</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.27227777716729584</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">392.0799991339445</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2494791667559184</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">359.2499997615814</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42852777663695935</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">617.0799982696772</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.48595138682544026</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">699.7699988633394</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4833749989565048</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">696.0599996075034</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4630694426725515</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">666.8199983164668</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5247430564033695</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">755.6300017461181</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24606944488025168</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">354.34000016003847</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2539444434611748</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">365.67999989539385</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4950972217549052</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">712.9400010183454</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5302916676866718</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">763.6200003176928</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5110694451464547</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">735.9400003924966</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5233263878876137</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">753.5899987891316</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5299166624382552</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">763.0799982175231</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2518750000745058</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">362.70000030100346</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25402777786884045</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">365.8000003695488</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5855833312315453</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">843.23999684304</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">1.448048610602402</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">2085.1900017261505</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5153680533338856</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">742.1300006657839</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.9945694425518418</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">1432.1800009161234</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4817986119629091</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">693.7900025844574</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26626388715683585</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">383.41999918967485</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3220694428309798</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">463.77999805659056</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-02-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5508888906204246</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">793.2800012677908</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4248125008824799</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">611.7300003841519</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.515687499279415</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">742.5900004506111</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.512555554884279</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">738.080000475049</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.6272638875266744</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">903.2599991410971</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24809027763290536</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">357.2499999552965</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2512708328948874</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">361.830000013113</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4345624992080654</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">625.7699990421534</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.49375694314949214</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">711.0099995359778</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5534166659862321</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">796.9199995025992</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">2.626194443773582</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">3781.7200015336275</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">2.8360624944584236</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">4083.930004104972</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.27111805544700474</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">390.409999512136</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-03-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2645869570905748</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">365.13000060617924</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44527083302899784</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">641.1899981200695</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4577847243959291</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">659.2100021615624</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5283055586171232</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">760.7600042372942</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47518055567828316</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">684.2599997371435</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46503472145802033</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">669.6499997973442</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26132638858527774</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">376.31000056117773</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26966666696049896</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.32000038027763</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4966875023156818</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">715.2300013676286</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.6937083282908942</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">998.9399953857064</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5941319433881694</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">855.5500028729439</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5548055523411475</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">798.9199972599745</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4604722228121116</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">663.0799994319677</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2601527783424697</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">374.6200007721782</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26948611162758124</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.0600001960993</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4927291652291185</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">709.5299991443753</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.6203472220804542</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">893.2999976351857</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.6887708312650729</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">991.829994790256</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-03-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.27897916646260357</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">401.72999895364046</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.6255138921874782</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">900.7400031834841</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2828055534304844</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">407.23999827355146</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2964861108986143</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">426.9399998039007</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5787986110274991</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">833.4699998423457</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.6877222198656656</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">990.3199995234609</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.502673611698103</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">723.8500026315451</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4256597243236481</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">612.9500024616718</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.43286111338400385</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">623.3200016468763</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24577777786180377</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">353.9199999347329</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2605972215015855</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">375.2599996626377</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4308124990331837</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">620.3700007721782</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.49442361005478436</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">711.9700005576015</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5149652766542405</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">741.5499993264675</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4911805535019893</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">707.2999982833862</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4139722216447505</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">596.1199979111552</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25868055675851387</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">372.5000012591481</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2724374994674387</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">392.3100004568696</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45908333183938843</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">661.079999037087</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.456562497252081</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">657.44999679178</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5332083313324902</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">767.8199972212315</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4532847227399341</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">652.7300002127886</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4222986131854769</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">608.1100020930171</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24906944337352696</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">358.6599992439151</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26237499911157003</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">377.81999937444925</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41336805511835134</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">595.249999307096</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.48107639130386004</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">692.7500009834766</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5228402751834236</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">752.8899995461106</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5046944431313831</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">726.7599999606609</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4123125010713314</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">593.7300014048815</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-04-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24106249944048208</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">347.1299999579787</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2393750002892274</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">344.7000006586313</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47390277921739554</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">682.4199974983931</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41268750074474764</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">594.270000718534</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.508597221535941</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">732.3799993395805</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47976388696891564</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">690.8599987030029</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4085902756907874</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">588.3699992448092</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25052083402665126</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">360.7500007376075</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.23706249875896093</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">341.36999875307083</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5238472260340737</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">754.3400005176663</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46007638830148306</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">662.5099992454052</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.503590275417082</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">725.1699983924627</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3976944447753744</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">572.679999858141</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4187777777875049</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">603.0400017276406</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2696527785414623</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.3000006750226</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25411111082131455</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">365.91999965161085</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44029166559792227</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">634.0199991092086</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.40497916635488057</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">583.1699994876981</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5035694466464015</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">725.1400009766221</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5052430561562586</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">727.5500009134412</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44047221972141415</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">634.2799986153841</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25553472213343614</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">367.97000010311604</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.273826388144193</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">394.31000050902367</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5278680552728474</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">760.129998229444</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4856736102891672</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">699.3699993267655</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5318888866394345</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">765.9199989959598</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4900069434726093</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">705.609998524189</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4268611107642452</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">614.680000513792</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25329861167766565</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">364.75000013411045</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25640972236740506</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">369.2300003692508</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26960416798505726</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.23000052571297</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-05-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42072222221435773</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">605.8399988412857</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.7667847138751919</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">1104.169995546341</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.39298611010114354</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">565.8999993056059</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3961458309333668</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">570.449997767806</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2640972211439576</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">380.29999873042107</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.28210416661911747</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">406.2300000488758</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4262569429120049</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">613.8099984824657</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5159374987447841</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">742.9500006213784</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5400763876645619</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">777.710000962019</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4215000002877787</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">606.9600007608533</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3859166666710128</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">555.7199997901917</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2403888882189575</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">346.1599998176098</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2694583327975124</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.0199999511242</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4407986102677468</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">634.7499997466803</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44074305560853744</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">634.6699995175004</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5097430552769866</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">734.0300013571978</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4289652779374996</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">617.7100002467632</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4120138885078227</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">593.2999998182058</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2579166666449358</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">371.39999989420176</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2559861104172241</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">368.62000004947186</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45665972167626023</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">657.5899998173118</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4972916639979101</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">716.0999977365136</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47108333208598197</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">678.359997831285</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4367847231721195</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">628.9700002446771</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.36277083213725647</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">522.3899998888373</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26407638850570136</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">380.2700003311038</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2740208338234677</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">394.5900011956692</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45993750014652807</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">662.3100013583899</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4547569461994701</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">654.8500008061528</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44965972271489185</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">647.5100005865097</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-06-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.36793749778816065</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">529.8299990743399</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3677361121517606</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">529.5399996489286</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.258881944956051</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">372.78999995440245</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24439583343660665</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">351.93000008910894</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2417083323881444</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">348.059999614954</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45866666386266136</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">660.4799967482686</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44729166614383253</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">644.099999062717</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47989583421602017</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">691.050000667572</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46322222527426976</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">667.0400014147162</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26312500027577496</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">378.8999991863966</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.254861110892509</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">366.9999993145466</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4107847203591114</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">591.5299988761544</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4919861089826251</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">708.4600001126528</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4986111108575844</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">717.9999993294477</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4496249948343676</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">647.4599962607026</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.40165972187727067</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">578.390000924468</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2706874998596807</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">389.78999991714954</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.28348610971847343</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">408.21999867260456</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42350694523580995</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">609.8500031456351</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4728472230231596</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">680.9000012129545</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5223402806053249</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">752.1700018569827</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4247708326826493</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">611.6700003668666</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4352708336793714</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">626.7900004759431</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2598749992450596</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">374.21999905258417</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2643055549900358</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">380.59999967366457</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45244444376375115</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">651.5199995189905</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4488124979220124</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">646.2899993136525</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5350555560370494</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">770.4800008609891</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4520347228066789</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">650.9299990534782</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.39170138952451655</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">564.0500003173947</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2629236120135627</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">378.61000111699104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-07-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2612916652708211</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">376.25999888032675</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3723680545161996</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">536.2099996507168</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44806944666197523</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">645.2199999839067</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4491111110481951</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">646.7199997678399</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3900694430534107</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">561.6999982967973</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.40742361065026167</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">586.6899997964501</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2646666654941833</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">381.1199993044138</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2679861101334811</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">385.89999889582396</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42446527809887713</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">611.230001911521</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44141666329879725</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">635.6399963796139</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5068194456786538</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">729.8199986368418</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4614097238259597</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">664.4300008043647</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4456874999644545</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">641.7899994552135</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25279166730534697</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">364.01999977976084</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2588611107138503</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">372.75999960303307</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47990972243456376</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">691.0700012892485</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42509027673966354</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">612.1299979239702</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5336458347220387</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">768.4500001072884</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47254861261980197</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">680.4700008109212</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4383333338967835</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">631.2000001743436</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25309027798034045</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">364.4500006735325</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2756874995021563</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">396.9900000169873</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44321527449776316</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">638.2299975901842</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46538194362074137</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">670.1499987840652</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5685555548342462</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">818.7199988514185</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4613541647688382</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">664.3500000983477</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4486597247822728</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">646.0700014904141</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24710416537709534</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">355.82999861985445</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2452499997194132</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">353.1599990725517</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46406249817098594</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">668.2499990537763</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4561875005925281</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">656.9099988788366</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-08-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4639236108503408</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">668.0499979034066</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44765277615644866</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">644.6199984773993</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.40943749960408443</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">589.590000025928</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2575763880676176</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">370.90999922156334</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.28175694411361796</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">405.72999969124794</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.28093055508280584</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">404.5399989634752</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4874791651705487</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">701.969998896122</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5311458345062824</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">764.8499983996153</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46079860941972584</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">663.5499974116683</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41261110873892903</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">594.159998498857</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3283472222004396</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">472.8200004398823</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2790069438568834</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">401.76999869942665</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4535486103915092</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">653.1099996343255</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4362847224304763</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">628.2499983236194</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5668333323103272</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">816.2399979606271</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44802777376672664</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">645.1599960550666</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4244305545192522</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">611.180000141263</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.31478472301063853</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">453.28999972343445</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.28025694433987763</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">403.5699996203184</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46084722107560894</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">663.6199987158179</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5153055566738153</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">742.0400011241436</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5469791655389903</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">787.6499998122454</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.52820833271835</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">760.620001077652</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.38854166536798906</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">559.4999987781048</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24774999980581924</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">356.7599998936057</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2737361112635376</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">394.1800004094839</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46281944340767545</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">666.4600000306964</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.49590277949917233</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">714.0999988764524</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47256944635106873</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">680.5000011399388</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4501527812875186</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">648.2200031206012</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-09-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45481944623558473</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">654.9400014802814</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2603263882920146</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">374.8700001165271</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2501527765351865</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">360.21999979764223</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41371527704824174</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">595.7499993294477</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41909027807802585</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">603.4899992793798</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.520097219501622</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">748.9399965554476</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.43971527876823935</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">633.1900011524558</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4192013906237359</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">603.6500016376376</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24764583294745535</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">356.60999947041273</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2587430545051272</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">372.58999967575073</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4184305536457234</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">602.5399978011847</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5137569429094179</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">739.8099990412593</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45667360946794766</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">657.6099986881018</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4929652768575276</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">709.8700012415648</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4105972246228096</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">591.2600036039948</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.27297916581543785</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">393.08999898284674</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25035416641427827</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">360.51000063866377</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.43799305587567183</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">630.709998100996</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.47709027586582425</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">687.0099997371435</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5349097236693423</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">770.2699986323714</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45402777845609105</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">653.8000026866794</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4532708311194761</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">652.7100001722574</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2590694443659029</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">373.05999998003244</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2500624993376227</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">360.0900000780821</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4685694433994488</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">674.7399994656444</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4833402764181503</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">696.0099961981177</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5226527794729918</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">752.6200002506375</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5125694424431357</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">738.0999977886677</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3841388886535747</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">553.1600000783801</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.27320138830691576</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">393.4099987745285</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2579930554299305</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">371.5099993124604</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-10-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5053958332541192</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">727.7700000479817</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-11-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4983749987764491</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">717.6599983125925</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-11-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.39973610950013</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">575.619997382164</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-11-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4346944433442938</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">625.9599990770221</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-11-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3993472218992085</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">575.0600004941225</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-11-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2698680550351532</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">388.6099990978837</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT1"><Data ss:Type="DateTime">2022-11-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2756308750831522</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">397.489998459816</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.43328472308995614</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">623.9300027489662</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4200972210253692</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">604.9399991557002</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5151597252633009</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">741.8300017118454</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5014513901486579</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">722.090000204742</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24720138874060163</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">355.96999914199114</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26094444493840757</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">375.76000080257654</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26671527681820506</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">384.06999887526035</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5671458289078954</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">816.6899946257472</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5610833358304161</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">807.959999114275</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5011527761364252</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">721.6599978134036</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.44614583409080905</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">642.4500012919307</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.46274305367842317</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">666.3499984592199</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2512777775668332</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">361.8399999290705</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.29915972064352697</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">430.7899990901351</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.542368050024379</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">781.0099943578243</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5290972219016921</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">761.8999992609024</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5234027770089192</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">753.6999989748001</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3394166655230543</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">488.7599982395768</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.34362499948797953</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">494.82000198215246</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2406805552309379</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">346.5799995288253</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26074999989294967</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">375.4800002500415</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5552986060954734</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">799.6299951672554</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4938750001084473</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">711.1800000220537</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-11-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.5439444463894082</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">783.2800003662705</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-01T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45351388850637403</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">653.0599991381168</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-02T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4065208340762183</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">585.3900006636977</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-03T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2706041657042483</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">389.66999927163124</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-04T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2612638888013963</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">376.2200001627207</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-05T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4436041675637373</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">638.7900011464953</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-06T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.442854167919399</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">637.7100026905537</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-07T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4947569437402611</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">712.4500002190471</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-08T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3937499992251914</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">567.0000003129244</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-09T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4145208330010064</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">596.9099993109703</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-10T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2572569442822391</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">370.44999949634075</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-11T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2559236090358657</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">368.529998280108</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-12T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4078194446434888</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">587.2600013688207</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-13T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.41310416576581904</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">594.8699995577335</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-14T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4600208344959861</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">662.4299996718764</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-15T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.4703749985007259</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">677.3399988412857</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-16T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.42684027915432426</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">614.6500017270446</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-17T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25340277838727665</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">364.9000014141202</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-18T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2732083330435368</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">393.42000038176775</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-19T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.37476388797060484</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">539.6599991992116</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-20T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3915972227566979</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">563.9000010117888</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-21T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.45753472256344846</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">658.8500007018447</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-22T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.3201875008396908</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">461.07000072300434</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-23T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26164583310795325</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">376.7699999585748</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-24T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.26890972323922646</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">387.23000115156174</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-25T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25946527667757535</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">373.6299991235137</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-26T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.2775486105108737</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">399.66999927163124</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-27T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.43488194367253324</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">626.2300015538931</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-28T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25731250011206913</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">370.5299998819828</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-29T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25309027823257363</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">364.45000144839287</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-30T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.24522916737866277</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">353.1299999654293</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="DT0"><Data ss:Type="DateTime">2022-12-31T00:00:00</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="U0"><Data ss:Type="Number">0.25502083317971685</Data></Cell>
+    <Cell ss:StyleID="U1"><Data ss:Type="Number">367.2299996986985</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>
