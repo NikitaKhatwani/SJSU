@@ -168,7 +168,7 @@ def main():
 
         districtCHW = st.checkbox("District CHW")
         districtCHW_df = filtered_df[filtered_df["District Steam (Yes or No)"] == "yes"]
-        if districtTherm:
+        if districtCHW:
             st.subheader(f"There are {districtCHW_df.shape[0]} buildings on the district steam/CHW loop")    
 
         districtElec = st.checkbox("District Electricity")
