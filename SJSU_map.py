@@ -367,10 +367,6 @@ def main():
 
         # Display the map
         st_folium(map, width=1500, height=800)
-        
-    # Add a small spacer if necessary
-    st.markdown("<br>", unsafe_allow_html=True)  # Reduces space between map and next section
-
     st.subheader("Data Visualization")
     st.subheader("Pick Data for Visualization")
     measured_usage = st.checkbox("Measured Usage")
