@@ -146,39 +146,7 @@ def filter_buildings(buildings, selected_buildings):
 
 def plot_line_charts(timestamp,dfs, building_names):
     """Generate line charts for each column in the DataFrame."""
-    
-    # # Convert the series to datetime for x-axis
-    # df['Timestamp'] = pd.to_datetime(timestamp)
 
-    # # Ensure all other columns are numeric
-    # for column in df.columns[1:-1]:
-    #     df[column] = pd.to_numeric(df[column], errors='coerce')
-
-    # # Drop columns with all NaN values
-    # df = df.dropna(axis=1, how='all')
-
-    # # Create a chart for each column
-    # # Create a chart for each column
-    # for column in df.columns[:-1]:
-    #     # Escape special characters in column names
-    #     escaped_column = column.replace(":", "\\:").replace("/", "\\/")
-        
-    #     if df[column].notna().any():  # Check if column has any non-NaN values
-    #         chart = alt.Chart(df).mark_line().encode(
-    #             # x=alt.X(timestamp_col, title='Timestamp', type='temporal'),
-                
-    #             # y=alt.Y(escaped_column, title=column, type='quantitative'),
-    #             # # tooltip=[ts, escaped_column]
-    #             x=alt.X('Timestamp:T', title='Timestamp'),
-    #             y=alt.Y(f'{escaped_column}:Q', title=column),
-    #             # Optionally include tooltip
-    #             tooltip=['Timestamp:T', f'{escaped_column}:Q']
-    #         ).properties(
-    #             width=600,
-    #             height=400,
-    #             title=f'{column}'
-    #         )
-    #         st.altair_chart(chart, use_container_width=True)
         # Convert the series to datetime for x-axis
     timestamp = pd.to_datetime(timestamp)
     
@@ -317,12 +285,7 @@ def main():
             
         label = st.checkbox("Building Names")
         
-        # tiles_options = st.selectbox("Select Base Map", ["Basic", "Satellite"])
-        # if tiles_options == "Basic":
-        #     tiles = "cartodbpositron"
-        # else:
-        #     tiles='Esri WorldImagery'
-        # Dropdown menu for meter number selection
+
         shared_meter = st.checkbox("Shared meters")
 
 
@@ -349,42 +312,14 @@ def main():
         # Add markers for selected buildings
             add_building_markers(map, filtered_df,"#00b3b3",7)
 
-        # # Add markers and lines based on selected buildings and meter number
-        # if selected_buildings:
-        #     filtered_df = buildings[buildings["name"].isin(selected_buildings)]
-        # else:
-        #     filtered_df = buildings
 
-
-        # # Add markers based on selected buildings or all buildings
-        # if selected_buildings:
-        #     filtered_df = buildings[buildings["name"].isin(selected_buildings)]  # Filter DataFrame
-        #     for index, row in filtered_df.iterrows():  # Iterate over filtered DataFrame
-        #         circle_marker, label = create_marker(row.to_dict())
-        #         map.add_child(circle_marker)  # Convert row to dictionary
-        # else:
-        #     for index, row in buildings.iterrows():
-        #         circle_marker, label = create_marker(row.to_dict())
-        #         map.add_child(circle_marker)
 
 
 
 
         # Filter by selected meter number
         if shared_meter:
-            # meter_df = filtered_df[filtered_df["Sharing meters"].notna()]
-            # coords = meter_df[["lat", "lon"]].values.tolist()
-            # add_building_label(map, meter_df,"#00ace6",7)
-            # # # Draw markers and labels for buildings with the selected meter number
-            # # for index, row in meter_df.iterrows():
-            # #     circle_marker, label = create_marker(row.to_dict())
-            # #     map.add_child(circle_marker)
-            # #     map.add_child(label)
-            
-            # # Draw lines if there are at least 2 points
-            # if len(coords) > 1:
-            #     draw_dotted_line_meters(map,coords)
-            # Strip leading/trailing spaces from column names
+
             buildings.columns = buildings.columns.str.strip()
 
             filtered_bldg = buildings.dropna(subset=['Sharing meters'])
@@ -432,6 +367,9 @@ def main():
 
         # Display the map
         st_folium(map, width=1500, height=800)
+        
+    # Add a small spacer if necessary
+    st.markdown("<br>", unsafe_allow_html=True)  # Reduces space between map and next section
 
     st.subheader("Data Visualization")
     st.subheader("Pick Data for Visualization")
@@ -533,15 +471,11 @@ def main():
 
                 timestamp = timestamp_2023
 
-            # st.write("Building name:22233",timestamp)
+   
             # Combine Series into a DataFrame
             data_measured = pd.DataFrame({'Electricity (kWh) Usage': electricity, 'Gas (Therms) Usage': gas, 'Steam (Therms) Usage': steam, "Chilled Water (Ton-Hours)":CHW})
             data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling})
-            # if CS_loads:
-            #     load_CSdata = st.checkbox("Load Data Table")
-            #     if load_CSdata:
-            #         st.write(f"**{building_name.title()} Loads:**")
-            #         st.write(data_TMY_CS)
+
             # Create a numbered list
             measured_totalEUI = [round(AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,"measurement.eui.total"].values[0])]
             measured_elecEUI = [round(AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,"measurement.eui.E"].values[0])]
