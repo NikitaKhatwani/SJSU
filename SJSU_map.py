@@ -158,16 +158,17 @@ def plot_line_charts(timestamp,dfs, building_names):
             
             # Add each building's data to the chart data
             for i, df in enumerate(dfs):
-                # Check if the column is empty
-                if df[column].isna().all():
-                    continue  # Skip to the next column
+
                 df[column] = pd.to_numeric(df[column], errors='coerce')
                 building_name = building_names[i]
                 building_data = df[column].values
                 chart_data[f'{building_name} ({column})'] = building_data
 
 
-            
+            # Check if the column has any valid data
+            if chart_data[chart_data.columns[1:]].isnull().all().all():  # Check if all values are NaN
+                continue  # Skip this column if it has no valid data
+                
             # Create a new figure for each column
             fig = go.Figure()
             
