@@ -421,7 +421,7 @@ def main():
 
 
         if building_name == "Boccardo Business Classroom Building".lower():
-                building_name = "Boccardo Business Classroom Building +Business Tower"
+                building_name = "Boccardo Business Classroom Building +Business Tower".lower()
 
         if building_name == "Business Tower".lower():
                 st.warning("Business Tower shares the same meter as Boccardo Business Classroom Building. Please select Boccardo Business Classroom Building to view their combined usage.")
