@@ -433,6 +433,10 @@ def main():
         if building_name == "Moss Landing Marine Lab Aquaculture Facility".lower():
                 st.warning("All meters for the Moss Landing Marine Lab Aquaculture Facility & Marine Operations have been combined with the main laboratory meter. Please select Moss Landing Marine Lab Main Laboratory to view their combined usage")
 
+
+        if building_name == "Joe West Hall (Stu Res)".lower():
+                building_name = "Joe West Hall".lower()
+        
         if building_name in AEDA_buildings_data["metadata.building_name"].values:
             electricity = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,elec_columns_to_select].values.squeeze()
             gas = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,gas_columns_to_select].values.squeeze()
