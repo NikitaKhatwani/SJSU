@@ -152,15 +152,21 @@ def plot_line_charts(timestamp,dfs, building_names):
     
     if building_names != "Aggregated campus":
         for column in dfs[0].columns:  # Assuming all DataFrames have the same columns
+
             chart_data = pd.DataFrame()
             chart_data['Timestamp'] = timestamp
             
             # Add each building's data to the chart data
             for i, df in enumerate(dfs):
+                # Check if the column is empty
+                if df[column].isna().all():
+                    continue  # Skip to the next column
                 df[column] = pd.to_numeric(df[column], errors='coerce')
                 building_name = building_names[i]
                 building_data = df[column].values
                 chart_data[f'{building_name} ({column})'] = building_data
+
+
             
             # Create a new figure for each column
             fig = go.Figure()
