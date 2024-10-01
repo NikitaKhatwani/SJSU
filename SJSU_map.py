@@ -183,55 +183,47 @@ def plot_line_charts(timestamp,dfs, building_names):
             st.altair_chart(chart, use_container_width=True)
 
     if building_names == "Aggregated campus":
-            chart_data = pd.DataFrame()
-            chart_data['Timestamp'] = timestamp
-
-            for column in dfs.columns:#Assuming all DataFrames have the same columns
-  
-                # Add each building's data to the chart data
-                dfs[column] = pd.to_numeric(dfs[column], errors='coerce')
-
-
-                building_data = dfs[column].values
-                chart_data[f'{building_names} ({column})'] = building_data
-
-            # Melt the DataFrame to a long format for Altair
-            melted_data = chart_data.melt(id_vars=['Timestamp'], var_name='Building', value_name='Value')
-            
-
-            # melted_data = melted_data.dropna(axis=1, how='all')
-            # Check if the column is empty
-            # if melted_data["Value"].isna().all():
-            #     continue  # Skip to the next column
-
-
-
-            # Define a function to assign colors based on building type
-            def assign_color(building_name):
-                if building_name == f'{building_names} (cooling.load.kBtu)':
-                    return 'blue'
-                elif building_name == f'{building_names} (heating.load.kBtu)':
-                    return 'red'
-                else:
-                    return 'gray'
-
-            # Create a new column in melted_data for colors
-            melted_data['Color'] = melted_data['Building'].apply(assign_color)
-
-            # Create the chart using the Color column
-            chart = alt.Chart(melted_data).mark_line().encode(
-                x=alt.X('Timestamp:T', title='Timestamp'),
-                y=alt.Y('Value:Q', title="Aggregated Campus Loads(kBtu)"),
-                color=alt.Color('Color:N', scale=None),  # Use the Color column without a scale
-                tooltip=['Timestamp:T', 'Building:N', 'Value:Q']
-            ).properties(
-                width=600,
-                height=400,
-                # title='Aggregated Campus Loads Over Time'
-            )
-
-            st.altair_chart(chart, use_container_width=True)
-
+        chart_data = pd.DataFrame()
+        chart_data['Timestamp'] = timestamp
+    
+        for column in dfs.columns:  # Assuming all DataFrames have the same columns
+            dfs[column] = pd.to_numeric(dfs[column], errors='coerce')
+            building_data = dfs[column].values
+            chart_data[f'{building_names} ({column})'] = building_data
+    
+        # Melt the DataFrame to a long format for Altair
+        melted_data = chart_data.melt(id_vars=['Timestamp'], var_name='Building', value_name='Value')
+    
+        # Define a function to assign colors based on building type
+        def assign_color(building_name):
+            if building_name == f'{building_names} (cooling.load.kBtu)':
+                return 'blue'
+            elif building_name == f'{building_names} (heating.load.kBtu)':
+                return 'red'
+            else:
+                return 'gray'
+    
+        # Create a new column in melted_data for colors
+        melted_data['Color'] = melted_data['Building'].apply(assign_color)
+    
+        # Define the selection interval
+        selection = alt.selection_interval(encodings=['x'])
+    
+        # Create the chart with range selector
+        chart = alt.Chart(melted_data).mark_line().encode(
+            x=alt.X('Timestamp:T', title='Timestamp', scale=alt.Scale(domain=selection)),  # Use selection for x-axis
+            y=alt.Y('Value:Q', title="Aggregated Campus Loads(kBtu)"),
+            color=alt.Color('Color:N', scale=None),  # Use the Color column without a scale
+            tooltip=['Timestamp:T', 'Building:N', 'Value:Q']
+        ).properties(
+            width=600,
+            height=400,
+            title='Aggregated Campus Loads Over Time'
+        ).add_selection(
+            selection  # Add the selection to the chart
+        )
+    
+        st.altair_chart(chart, use_container_width=True)
 
 
 def main():
