@@ -151,9 +151,6 @@ def plot_line_charts(timestamp,dfs, building_names):
     timestamp = pd.to_datetime(timestamp)
     
     if building_names != "Aggregated campus":
-        # Create a new figure for the selected buildings
-        fig = go.Figure()
-    
         for column in dfs[0].columns:  # Assuming all DataFrames have the same columns
             chart_data = pd.DataFrame()
             chart_data['Timestamp'] = timestamp
@@ -165,7 +162,8 @@ def plot_line_charts(timestamp,dfs, building_names):
                 building_data = df[column].values
                 chart_data[f'{building_name} ({column})'] = building_data
             
-            # Melt the DataFrame to a long format (not needed for Plotly)
+            # Create a new figure for each column
+            fig = go.Figure()
             
             # Plot each building's data
             for building in chart_data.columns[1:]:  # Skip the Timestamp column
@@ -178,29 +176,29 @@ def plot_line_charts(timestamp,dfs, building_names):
                     )
                 )
     
-        # Set the title and axis labels
-        fig.update_layout(
-            title=f'{column}',
-            xaxis_title='Timestamp',
-            yaxis_title=column,
-            xaxis=dict(
-                rangeselector=dict(
-                    buttons=list([
-                        dict(count=1, label="1d", step="day", stepmode="backward"),
-                        dict(count=1, label="1m", step="month", stepmode="backward"),
-                        dict(count=6, label="6m", step="month", stepmode="backward"),
-                        dict(count=1, label="YTD", step="year", stepmode="todate"),
-                        dict(count=1, label="1y", step="year", stepmode="backward"),
-                        dict(step="all")
-                    ])
-                ),
-                rangeslider=dict(visible=True),
-                type="date"
+            # Set the title and axis labels
+            fig.update_layout(
+                title=f'{column}',
+                xaxis_title='Timestamp',
+                yaxis_title=column,
+                xaxis=dict(
+                    rangeselector=dict(
+                        buttons=list([
+                            dict(count=1, label="1d", step="day", stepmode="backward"),
+                            dict(count=1, label="1m", step="month", stepmode="backward"),
+                            dict(count=6, label="6m", step="month", stepmode="backward"),
+                            dict(count=1, label="YTD", step="year", stepmode="todate"),
+                            dict(count=1, label="1y", step="year", stepmode="backward"),
+                            dict(step="all")
+                        ])
+                    ),
+                    rangeslider=dict(visible=True),
+                    type="date"
+                )
             )
-        )
     
-        # Show the figure
-        st.plotly_chart(fig, use_container_width=True)
+            # Show the figure
+            st.plotly_chart(fig, use_container_width=True)
 
     if building_names == "Aggregated campus":
         # Create a new figure for the selected buildings
