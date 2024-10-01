@@ -182,7 +182,7 @@ def plot_line_charts(timestamp,dfs, building_names):
             )
             st.altair_chart(chart, use_container_width=True)
 
-   if building_names == "Aggregated campus":
+    if building_names == "Aggregated campus":
         # Create a new figure for the selected buildings
         fig = go.Figure()
     
