@@ -416,7 +416,7 @@ def main():
         if building_name == "corporation yard offices".lower():
                 building_name = "corporation yard offices+yard trades".lower()
 
-        if building_name == "Corporation Yard Trades".lower():
+        if building_name == "Corporation Yard Trades Building".lower():
                 st.warning("Corporation Yard Trade shares the same meter as Corporation Yard Offices. Please select Corporation Yard Offices to view their combined usage.")
 
 
