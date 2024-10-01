@@ -383,7 +383,7 @@ def main():
         # building_name = selected_buildings[0].lower()  # Assuming one building is selected for now
 
         if building_name == "Campus Village A".lower():
-                building_name = "Campus Village 1"
+                building_name = "Campus Village 1".lower()
 
         if building_name == "Campus Village B".lower():
                 st.warning("Campus Village A, B and C are combined under the Campus Village 1 meter. The data for this meter has been put under Campus Village A. Please select Campus Village A to view their combined usage.")
@@ -393,19 +393,19 @@ def main():
                 st.warning("Campus Village A, B and C are combined under the Campus Village 1 meter. The data for this meter has been put under Campus Village A. Please select Campus Village A to view their combined usage.")
 
         if building_name == "spx central":
-                building_name = "spx central & east"
+                building_name = "spx central & east".lower()
 
         if building_name == "spx east":
                 st.warning("SPX east shares the same meter as SPX central. Please select SPX central to view their combined usage.")
 
         if building_name == "dudley moorehead hall":
-                building_name = "Dudley Moorehead Hall + IRC"
+                building_name = "Dudley Moorehead Hall + IRC".lower()
 
         if building_name == "INSTRUCTIONAL RESOURCE CENTER".lower():
                 st.warning("Intructional resource center shares the same meter as Dudley Moorehead Hall. Please select Dudley Moorehead Hall to view their combined usage.")
 
         if building_name == "Modular F".lower():
-                building_name = "Modular F,A,B"
+                building_name = "Modular F,A,B".lower()
 
         if building_name == "Modular A".lower():
                 st.warning("Modular A and Modular B share the same meter as Modular F. Please select Modular F to view their combined usage.")
@@ -414,7 +414,7 @@ def main():
                 st.warning("Modular B and Modular A share the same meter as Modular F. Please select Modular F to view their combined usage.")
 
         if building_name == "corporation yard offices".lower():
-                building_name = "corporation yard offices+yard trades"
+                building_name = "corporation yard offices+yard trades".lower()
 
         if building_name == "Corporation Yard Trades".lower():
                 st.warning("Corporation Yard Trade shares the same meter as Corporation Yard Offices. Please select Corporation Yard Offices to view their combined usage.")
@@ -428,7 +428,7 @@ def main():
 
 
         if building_name == "Moss Landing Marine Lab Main Laboratory".lower():
-                building_name = "Moss Landing Marine Lab Main Laboratory +aquaculture facility +marine operations"
+                building_name = "Moss Landing Marine Lab Main Laboratory +aquaculture facility +marine operations".lower()
 
         if building_name == "Moss Landing Marine Lab Aquaculture Facility".lower():
                 st.warning("All meters for the Moss Landing Marine Lab Aquaculture Facility & Marine Operations have been combined with the main laboratory meter. Please select Moss Landing Marine Lab Main Laboratory to view their combined usage")
