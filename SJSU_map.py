@@ -151,7 +151,10 @@ def plot_line_charts(timestamp,dfs, building_names):
     timestamp = pd.to_datetime(timestamp)
     
     if building_names != "Aggregated campus":
-        for column in dfs[0].columns:#Assuming all DataFrames have the same columns
+        # Create a new figure for the selected buildings
+        fig = go.Figure()
+    
+        for column in dfs[0].columns:  # Assuming all DataFrames have the same columns
             chart_data = pd.DataFrame()
             chart_data['Timestamp'] = timestamp
             
@@ -162,37 +165,64 @@ def plot_line_charts(timestamp,dfs, building_names):
                 building_data = df[column].values
                 chart_data[f'{building_name} ({column})'] = building_data
             
-            # Melt the DataFrame to a long format for Altair
-            melted_data = chart_data.melt(id_vars=['Timestamp'], var_name='Building', value_name='Value')
-
-            # melted_data = melted_data.dropna(axis=1, how='all')
-            # Check if the column is empty
-            if melted_data["Value"].isna().all():
-                continue  # Skip to the next column
-
-            chart = alt.Chart(melted_data).mark_line().encode(
-                x=alt.X('Timestamp:T', title='Timestamp'),
-                y=alt.Y('Value:Q', title=column),
-                color='Building:N',
-                tooltip=['Timestamp:T', 'Building:N', 'Value:Q']
-            ).properties(
-                width=600,
-                height=400,
-                title=f'{column}'
+            # Melt the DataFrame to a long format (not needed for Plotly)
+            
+            # Plot each building's data
+            for building in chart_data.columns[1:]:  # Skip the Timestamp column
+                fig.add_trace(
+                    go.Scatter(
+                        x=chart_data['Timestamp'],
+                        y=chart_data[building],
+                        mode='lines',
+                        name=building
+                    )
+                )
+    
+        # Set the title and axis labels
+        fig.update_layout(
+            title=f'{column}',
+            xaxis_title='Timestamp',
+            yaxis_title=column,
+            xaxis=dict(
+                rangeselector=dict(
+                    buttons=list([
+                        dict(count=1, label="1d", step="day", stepmode="backward"),
+                        dict(count=1, label="1m", step="month", stepmode="backward"),
+                        dict(count=6, label="6m", step="month", stepmode="backward"),
+                        dict(count=1, label="YTD", step="year", stepmode="todate"),
+                        dict(count=1, label="1y", step="year", stepmode="backward"),
+                        dict(step="all")
+                    ])
+                ),
+                rangeslider=dict(visible=True),
+                type="date"
             )
-            st.altair_chart(chart, use_container_width=True)
+        )
+    
+        # Show the figure
+        st.plotly_chart(fig, use_container_width=True)
 
     if building_names == "Aggregated campus":
         # Create a new figure for the selected buildings
         fig = go.Figure()
-    
+        
         # Prepare data for each building
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
             dfs[column] = pd.to_numeric(dfs[column], errors='coerce')
             building_data = dfs[column].values
             
+            # Assign colors based on column names
+            if 'heating' in column.lower():
+                color = 'red'
+            elif 'cooling' in column.lower():
+                color = 'blue'
+            elif 'elec' in column.lower():
+                color = 'gray'
+            else:
+                color = 'black'  # Default color if none match
+    
             fig.add_trace(
-                go.Scatter(x=timestamp, y=building_data, mode='lines', name=f'{building_names} ({column})')
+                go.Scatter(x=timestamp, y=building_data, mode='lines', name=f'{building_names} ({column})', line=dict(color=color))
             )
     
         # Set the title and axis labels
@@ -215,10 +245,9 @@ def plot_line_charts(timestamp,dfs, building_names):
                 type="date"
             )
         )
-    
+        
         # Show the figure
         st.plotly_chart(fig, use_container_width=True)
-
 
 def main():
 
