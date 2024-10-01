@@ -182,48 +182,42 @@ def plot_line_charts(timestamp,dfs, building_names):
             )
             st.altair_chart(chart, use_container_width=True)
 
-    if building_names == "Aggregated campus":
-        chart_data = pd.DataFrame()
-        chart_data['Timestamp'] = timestamp
+   if building_names == "Aggregated campus":
+        # Create a new figure for the selected buildings
+        fig = go.Figure()
     
+        # Prepare data for each building
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
             dfs[column] = pd.to_numeric(dfs[column], errors='coerce')
             building_data = dfs[column].values
-            chart_data[f'{building_names} ({column})'] = building_data
+            
+            fig.add_trace(
+                go.Scatter(x=timestamp, y=building_data, mode='lines', name=f'{building_names} ({column})')
+            )
     
-        # Melt the DataFrame to a long format for Altair
-        melted_data = chart_data.melt(id_vars=['Timestamp'], var_name='Building', value_name='Value')
-    
-        # Define a function to assign colors based on building type
-        def assign_color(building_name):
-            if building_name == f'{building_names} (cooling.load.kBtu)':
-                return 'blue'
-            elif building_name == f'{building_names} (heating.load.kBtu)':
-                return 'red'
-            else:
-                return 'gray'
-    
-        # Create a new column in melted_data for colors
-        melted_data['Color'] = melted_data['Building'].apply(assign_color)
-    
-        # Define the selection interval
-        selection = alt.selection_interval(encodings=['x'])
-    
-        # Create the chart with range selector
-        chart = alt.Chart(melted_data).mark_line().encode(
-            x=alt.X('Timestamp:T', title='Timestamp', scale=alt.Scale(domain=selection)),  # Use selection for x-axis
-            y=alt.Y('Value:Q', title="Aggregated Campus Loads(kBtu)"),
-            color=alt.Color('Color:N', scale=None),  # Use the Color column without a scale
-            tooltip=['Timestamp:T', 'Building:N', 'Value:Q']
-        ).properties(
-            width=600,
-            height=400,
-            title='Aggregated Campus Loads Over Time'
-        ).add_selection(
-            selection  # Add the selection to the chart
+        # Set the title and axis labels
+        fig.update_layout(
+            title='Aggregated Campus Loads Over Time',
+            xaxis_title='Timestamp',
+            yaxis_title='Aggregated Campus Loads (kBtu)',
+            xaxis=dict(
+                rangeselector=dict(
+                    buttons=list([
+                        dict(count=1, label="1d", step="day", stepmode="backward"),
+                        dict(count=1, label="1m", step="month", stepmode="backward"),
+                        dict(count=6, label="6m", step="month", stepmode="backward"),
+                        dict(count=1, label="YTD", step="year", stepmode="todate"),
+                        dict(count=1, label="1y", step="year", stepmode="backward"),
+                        dict(step="all")
+                    ])
+                ),
+                rangeslider=dict(visible=True),
+                type="date"
+            )
         )
     
-        st.altair_chart(chart, use_container_width=True)
+        # Show the figure
+        st.plotly_chart(fig, use_container_width=True)
 
 
 def main():
