@@ -3,15 +3,15 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import altair as alt
-# import plotly.graph_objects as go
-# from plotly.subplots import make_subplots
-# import pandas as pd
-# import plotly.offline as pyo
-# import matplotlib.pyplot as plt
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import pandas as pd
+import plotly.offline as pyo
+import matplotlib.pyplot as plt
 import folium as fo
 from streamlit_folium import folium_static, st_folium
 # from PIL import Image
-# import plotly.express as px
+import plotly.express as px
 import os
 
 
