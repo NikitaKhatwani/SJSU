@@ -145,7 +145,7 @@ def filter_buildings(buildings, selected_buildings):
         return buildings[buildings["name"].isin(selected_buildings)]
     return buildings
 
-def plot_line_charts(timestamp,dfs, building_names):
+def plot_line_charts(timestamp,dfs, building_names,title_plot):
     """Generate line charts for each column in the DataFrame."""
 
         # Convert the series to datetime for x-axis
@@ -233,7 +233,7 @@ def plot_line_charts(timestamp,dfs, building_names):
     
         # Set the title and axis labels
         fig.update_layout(
-            title='Aggregated Campus Loads Over Time',
+            title= title_plot,
             xaxis_title='Timestamp',
             yaxis_title='Aggregated Campus Loads (kBtu)',
             xaxis=dict(
@@ -626,7 +626,7 @@ def main():
                 for index,meterList in enumerate(numbered_meters_list):     
                     st.write(f"**{building_names[index].title()} Meters:**")
                     st.write(f"{meterList}")
-            plot_line_charts(timestamp, dfs, building_names)
+            plot_line_charts(timestamp, dfs, building_names,"Measured usage")
         if CS_loads:
             load_CSdata = st.checkbox("Load Data Table")
             if load_CSdata:
@@ -634,7 +634,7 @@ def main():
                     st.write(f"**{building_names[index].title()} Loads:**")
                     st.write(df)
                 st.write("**Aggregated Campus loads:**", aggregate_df)
-            plot_line_charts(timestamp_TMY, df_CS, building_names)
+            plot_line_charts(timestamp_TMY, df_CS, building_names,"CS Loads")
 
 
 
@@ -644,13 +644,13 @@ def main():
         st.warning("No data found for the selected buildings.")
 
     if aggregated_loads:
-            plot_line_charts(timestamp_TMY, aggregate_df, "Aggregated campus")
+            plot_line_charts(timestamp_TMY, aggregate_df, "Aggregated campus","Main campus aggregated loads")
 
     # select three cols for the selected buildings
     aggregate_selected_df = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]]
 
     if selected_aggregated_loads:
-        plot_line_charts(timestamp_TMY, aggregate_selected_df, "Aggregated campus")
+        plot_line_charts(timestamp_TMY, aggregate_selected_df, "Aggregated campus","Selected Buildings Aggregated Loads)
 
     
 
