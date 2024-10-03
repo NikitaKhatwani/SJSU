@@ -631,6 +631,7 @@ def main():
             load_CSdata = st.checkbox("Load Data Table")
             if load_CSdata:
                 for index,df in enumerate(df_CS):
+                    st.write(df_CS)
                     st.write(f"**{building_names[index].title()} Loads:**")
                     st.write(df)
                 st.write("**Aggregated Campus loads:**", aggregate_df)
