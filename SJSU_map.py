@@ -646,10 +646,11 @@ def main():
     if aggregated_loads:
             plot_line_charts(timestamp_TMY, aggregate_df, "Aggregated campus","Main campus aggregated loads")
 
-    # select three cols for the selected buildings
-    aggregate_selected_df = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]]
+
 
     if selected_aggregated_loads:
+            # select three cols for the selected buildings
+        aggregate_selected_df = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]]
         plot_line_charts(timestamp_TMY, aggregate_selected_df, "Aggregated campus","Selected Buildings Aggregated Loads")
 
     
