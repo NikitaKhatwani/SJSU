@@ -549,10 +549,10 @@ def main():
         # Sum the DataFrames
         final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
         final_df_CS["Simultaneuos Loads"] =final_df_CS[["CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]].min(axis=1)
-        max_simult_load = final_df_CS["Simultaneuos Loads"].max()
-        total_simult_load = final_df_CS["Simultaneuos Loads"].sum()
-        total_heating_load = final_df_CS["CS Heating Loads(kBtu)"].sum()
-        total_cooling_load = final_df_CS["CS Cooling Loads(kBtu)"].sum()
+        max_simult_load = round(final_df_CS["Simultaneuos Loads"].max())
+        total_simult_load = round(final_df_CS["Simultaneuos Loads"].sum())
+        total_heating_load = round(final_df_CS["CS Heating Loads(kBtu)"].sum())
+        total_cooling_load = round(final_df_CS["CS Cooling Loads(kBtu)"].sum())
         total_hc_load = total_heating_load + total_cooling_load
         percent_sim_heating = (total_simult_load/total_heating_load)*100
         percent_sim_cooling = (total_simult_load/total_cooling_load)*100
