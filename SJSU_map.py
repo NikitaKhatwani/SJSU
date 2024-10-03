@@ -68,7 +68,7 @@ def create_marker_ModularA(building,color,radius):
     # Create a circle marker
     circle_marker = fo.CircleMarker(
         location=[building["lat"], building["lon"]],
-        popup=f"<strong>{building['name']}:</strong><br>{building['Area']} sq.ft",
+        popup=f"<strong>{building['name']}:</strong><br>{building['Area']} sq.ft<br>Program Type: {building['Building Use Type']}",
         radius=radius,
         color=color,
         fill_color=color,
