@@ -541,9 +541,13 @@ def main():
             df_CS.append(data_TMY_CS)
             building_names.append(building_name)
 
-    if df_CS:
+    # Create a copy of the list of DataFrames
+    df_CS2 = [df.copy() for df in df_CS]  # Use a list comprehension to copy each DataFrame
+
+    
+    if df_CS2:
         # Sum the DataFrames
-        final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS)
+        final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
         final_df_CS["Simultaneuos Loads"] =final_df_CS[["CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]].min(axis=1)
         max_simult_load = final_df_CS["Simultaneuos Loads"].max()
         total_simult_load = final_df_CS["Simultaneuos Loads"].sum()
