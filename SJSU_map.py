@@ -506,12 +506,14 @@ def main():
         if building_name == "Modular F".lower():
                 building_name = "Modular F,A,B".lower()
 
-        if building_name == "Modular Building A".lower():
+        if building_name == "Modular A".lower():
                 st.warning("Modular A and Modular B share the same meter as Modular F. Please select Modular F to view their combined usage.")
-
-        if building_name == "Modular Building B".lower():
+                continue
+        
+        if building_name == "Modular B".lower():
                 st.warning("Modular B and Modular A share the same meter as Modular F. Please select Modular F to view their combined usage.")
-
+                continue
+        
         if building_name == "corporation yard offices".lower():
                 building_name = "corporation yard offices+yard trades".lower()
 
