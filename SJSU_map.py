@@ -497,7 +497,7 @@ def main():
         if building_name == "spx east":
                 st.warning("SPX east shares the same meter as SPX central. Please select SPX central to view their combined usage.")
 
-        if building_name == "dudley moorehead hall":
+        if building_name == "dudley moorehead hall".lower():
                 building_name = "Dudley Moorehead Hall + IRC".lower()
 
         if building_name == "INSTRUCTIONAL RESOURCE CENTER".lower():
