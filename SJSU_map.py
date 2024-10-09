@@ -474,7 +474,9 @@ def main():
     combined_EUIdf = pd.DataFrame()
     results_df_CS = pd.DataFrame()
 
-
+    # Get the list of missing buildings
+    missing_buildings = buildings[~buildings["name"].str.lower().isin(AEDA_buildings_data["metadata.building_name"])]
+    st.write("Missing AEDA buildings",missing_buildings["name"])
 
     # if selected_buildings:
     for building_name in selected_buildings:
@@ -537,6 +539,8 @@ def main():
 
         if building_name == "Joe West Hall (Stu Res)".lower():
                 building_name = "Joe West Hall".lower()
+
+        st.write("building_name",building_name)
         
         if building_name in AEDA_buildings_data["metadata.building_name"].values:
             electricity = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,elec_columns_to_select].values.squeeze()
