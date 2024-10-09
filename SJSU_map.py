@@ -460,6 +460,7 @@ def main():
     
     combined_buildings_data["Building Name"] = combined_buildings_data["Building Name"].str.lower()
     AEDA_buildings_data["metadata.building_name"] = AEDA_buildings_data["metadata.building_name"].str.lower()
+    AEDA_buildings_data["metadata.building_name"] = AEDA_buildings_data["metadata.building_name"].str.strip()
     elec_columns_to_select = [f"measurement.E.{i}" for i in range(1, 13)]
     gas_columns_to_select = [f"measurement.G.{i}" for i in range(1, 13)]
     steam_columns_to_select = [f"measurement.S.{i}" for i in range(1, 13)]
