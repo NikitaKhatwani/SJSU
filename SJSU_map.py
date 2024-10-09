@@ -543,6 +543,7 @@ def main():
         st.write("building_name",building_name,AEDA_buildings_data["metadata.building_name"])
         
         if building_name in AEDA_buildings_data["metadata.building_name"].values:
+            st.write("building_name2",building_name)
             electricity = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,elec_columns_to_select].values.squeeze()
             gas = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,gas_columns_to_select].values.squeeze()
             steam = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,steam_columns_to_select].values.squeeze()
