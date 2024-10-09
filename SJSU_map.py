@@ -456,7 +456,7 @@ def main():
 
     # Load data
     combined_buildings_data = load_data("SJSU_SkySpark Data_Compiled_v2.0.xlsx","SkYSPark Data_w Will's Data",1)
-    AEDA_buildings_data = load_data("20240906_SJSU_AEDA_Draft.xlsx","Inputs",3)
+    AEDA_buildings_data = load_data("20240918_SJSU_AEDA_Draft.xlsx","Inputs",3)
     
     combined_buildings_data["Building Name"] = combined_buildings_data["Building Name"].str.lower()
     AEDA_buildings_data["metadata.building_name"] = AEDA_buildings_data["metadata.building_name"].str.lower()
