@@ -476,8 +476,10 @@ def main():
     results_df_CS = pd.DataFrame()
 
     # Get the list of missing buildings
+    missing = st.checkbox("Missing Buildings")
     missing_buildings = buildings[~buildings["name"].str.lower().isin(AEDA_buildings_data["metadata.building_name"])]
-    st.write("Missing AEDA buildings",missing_buildings["name"])
+    if missing:
+        st.write("Missing AEDA buildings",missing_buildings["name"])
 
     # if selected_buildings:
     for building_name in selected_buildings:
