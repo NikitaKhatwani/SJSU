@@ -286,7 +286,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
 def main():
 
 
-    st.header("SJSU Energy Use")
+    st.header("SJSU Loads & Energy Use")
 
     # Load data
     buildings = load_data("sjsu_buildings.xlsx","sjsu_buildings",0)
