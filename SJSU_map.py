@@ -614,7 +614,12 @@ def main():
         total_heating_load = round(final_df_CS["CS Heating Loads(kBtu)"].sum())
         total_cooling_load = round(final_df_CS["CS Cooling Loads(kBtu)"].sum())
 
-        percent_sim_heating = (total_simult_h_load/total_heating_load)*100
+        # Check if total_heating_load is 0 before calculating the percentage
+        if total_heating_load != 0:
+            percent_sim_heating = (total_simult_h_load / total_heating_load) * 100
+        else:
+            percent_sim_heating = 0  # or handle as needed, e.g., set to None or display a warning
+
         percent_sim_cooling = (total_simult_c_load/total_cooling_load)*100
 
 
