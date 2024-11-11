@@ -547,16 +547,16 @@ def main():
                 building_name = "Joe West Hall".lower()
 
 
-        # if building_name in AEDA_buildings_data["metadata.building_name"].values or building_name in buildings_TMY_loads["building_name"]:
-        if building_name in buildings_TMY_loads["building_name"].values:
-            if building_name != "computer center":
-                electricity = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,elec_columns_to_select].values.squeeze()
-                gas = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,gas_columns_to_select].values.squeeze()
-                steam = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,steam_columns_to_select].values.squeeze()
-                CHW = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,CHW_columns_to_select].values.squeeze()
-                # elect = combined_buildings_data
-                meters = combined_buildings_data.loc[combined_buildings_data["Building Name"]==building_name,"List of meter names"].dropna().values.tolist()
-                timestamp = combined_buildings_data.loc[combined_buildings_data["Building Name"]==building_name,"Timestamp"].reset_index(drop=True)
+        # if building_name in AEDA_buildings_data["metadata.building_name"].values or building_name in buildings_TMY_loads["building_name"].values:
+        if building_name in AEDA_buildings_data["metadata.building_name"].values:
+
+            electricity = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,elec_columns_to_select].values.squeeze()
+            gas = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,gas_columns_to_select].values.squeeze()
+            steam = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,steam_columns_to_select].values.squeeze()
+            CHW = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,CHW_columns_to_select].values.squeeze()
+            # elect = combined_buildings_data
+            meters = combined_buildings_data.loc[combined_buildings_data["Building Name"]==building_name,"List of meter names"].dropna().values.tolist()
+            timestamp = combined_buildings_data.loc[combined_buildings_data["Building Name"]==building_name,"Timestamp"].reset_index(drop=True)
             timestamp_2018 = combined_buildings_data.loc[combined_buildings_data["Building Name"]=="SPX Central & east".lower(),"Timestamp"].reset_index(drop=True)
             timestamp_2023 = combined_buildings_data.loc[combined_buildings_data["Building Name"]=="Art".lower(),"Timestamp"].reset_index(drop=True)
 
