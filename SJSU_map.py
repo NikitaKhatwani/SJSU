@@ -484,8 +484,8 @@ def main():
     # if selected_buildings:
     for building_name in selected_buildings:
         building_name = building_name.lower()
+        st.write("building_name",building_name)
         # building_name = selected_buildings[0].lower()  # Assuming one building is selected for now
-
         if building_name == "Campus Village A".lower():
                 building_name = "Campus Village 1".lower()
 
@@ -604,7 +604,6 @@ def main():
         final_df_CS["Simultaneuos Loads(C)"] = final_df_CS["Simultaneuos Loads(H)"]/1.3
         df_CS[0]["Simultaneuos Loads(H)"] = final_df_CS["Simultaneuos Loads(H)"]
         df_CS[0]["Simultaneuos Loads(C)"] = final_df_CS["Simultaneuos Loads(C)"]
-        st.write("final_df_CS",final_df_CS)
         # final_df_CS["Simultaneuos Loads(H)"] =final_df_CS[["CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]].min(axis=1)
         max_simult_h_load = round(final_df_CS["Simultaneuos Loads(H)"].max())
         max_simult_c_load = round(final_df_CS["Simultaneuos Loads(C)"].max())
