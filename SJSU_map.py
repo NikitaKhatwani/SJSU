@@ -545,7 +545,7 @@ def main():
 
 
         
-        if building_name in AEDA_buildings_data["metadata.building_name"].values:
+        if building_name in AEDA_buildings_data["metadata.building_name"].values or building_name in buildings_TMY_loads["building_name"].values:
 
             electricity = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,elec_columns_to_select].values.squeeze()
             gas = AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,gas_columns_to_select].values.squeeze()
@@ -564,7 +564,6 @@ def main():
             timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"timestamp"].reset_index(drop=True)
 
             if timestamp.isna().all():
-
                 timestamp = timestamp_2023
 
    
