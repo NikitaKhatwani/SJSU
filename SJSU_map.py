@@ -557,8 +557,8 @@ def main():
                 # elect = combined_buildings_data
                 meters = combined_buildings_data.loc[combined_buildings_data["Building Name"]==building_name,"List of meter names"].dropna().values.tolist()
                 timestamp = combined_buildings_data.loc[combined_buildings_data["Building Name"]==building_name,"Timestamp"].reset_index(drop=True)
-                timestamp_2018 = combined_buildings_data.loc[combined_buildings_data["Building Name"]=="SPX Central & east".lower(),"Timestamp"].reset_index(drop=True)
-                timestamp_2023 = combined_buildings_data.loc[combined_buildings_data["Building Name"]=="Art".lower(),"Timestamp"].reset_index(drop=True)
+            timestamp_2018 = combined_buildings_data.loc[combined_buildings_data["Building Name"]=="SPX Central & east".lower(),"Timestamp"].reset_index(drop=True)
+            timestamp_2023 = combined_buildings_data.loc[combined_buildings_data["Building Name"]=="Art".lower(),"Timestamp"].reset_index(drop=True)
 
 
             CS_elec = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"total misc.elec"].reset_index(drop=True)
