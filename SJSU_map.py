@@ -224,6 +224,8 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
         
         # Prepare data for each building
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
+            if 'elec' in column.lower():
+                continue
             dfs[column] = pd.to_numeric(dfs[column], errors='coerce')
             building_data = dfs[column].values
 
@@ -564,7 +566,7 @@ def main():
             CS_elec = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"total misc.elec"].reset_index(drop=True)
             CS_heating = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"heating.load.kBtu"].reset_index(drop=True)
             CS_cooling = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"cooling.load.kBtu"].reset_index(drop=True)
-            timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building","timestamp"].reset_index(drop=True)
+            timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building".lower(),"timestamp"].reset_index(drop=True)
 
             if timestamp.isna().all():
                 timestamp = timestamp_2023
