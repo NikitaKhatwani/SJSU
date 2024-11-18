@@ -303,6 +303,9 @@ def main():
     # Load data
     buildings = load_data("sjsu_buildings.xlsx","sjsu_buildings",0)
 
+    #load timestamp
+    timestamp_TMY = load_data("Hourly Timestamp.xlsx","Sheet1",0)
+
     buildings_TMY_loads = load_data("TMY SJSU Hourly All Buildings_excel_binary.xlsb","TMY SJSU Hourly All Buildings",0)
     # Ensure timestamp is a datetime object
     buildings_TMY_loads['timestamp'] = pd.to_datetime(buildings_TMY_loads['timestamp'])
@@ -574,7 +577,7 @@ def main():
             CS_heating = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"heating.load.kBtu"].reset_index(drop=True)
             CS_cooling = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"cooling.load.kBtu"].reset_index(drop=True)
             CS_dhw = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"DHW.load.kBtu"].reset_index(drop=True)
-            timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building".lower(),"timestamp"].reset_index(drop=True)
+            # timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building".lower(),"timestamp"].reset_index(drop=True)
 
             if timestamp.isna().all():
                 timestamp = timestamp_2023
