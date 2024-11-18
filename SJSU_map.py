@@ -161,7 +161,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
         # Convert the series to datetime for x-axis
     st.write(type(timestamp))
     st.write(timestamp[:10]) 
-    timestamp = pd.to_datetime(timestamp)
+    # timestamp = pd.to_datetime(timestamp)
     
     if building_names != "Aggregated campus":
         for column in dfs[0].columns:  # Assuming all DataFrames have the same columns
