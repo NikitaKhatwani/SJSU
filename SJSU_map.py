@@ -177,7 +177,6 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 building_name = building_names[i]
                 
                 building_data = df[column].values
-                st.write("column",column,building_name,len(building_data),timestamp)
                 chart_data[f'{building_name} ({column})'] = building_data
                 if column == "CS Heating Loads(kBtu)" and i==0:
                     chart_data["Simultaneuos Loads(H)"] = df["Simultaneuos Loads(H)"].values
@@ -616,19 +615,19 @@ def main():
         final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
         final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
-                                                    final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["CS Heating Loads(kBtu)"],
-                                                    final_df_CS["CS Heating Loads(kBtu)"],
+                                                    final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["Total Heating Loads"],
+                                                    final_df_CS["Total Heating Loads"],
                                                     final_df_CS["CS Cooling Loads(kBtu)"]*1.3
                                                 )
         final_df_CS["Simultaneuos Loads(C)"] = final_df_CS["Simultaneuos Loads(H)"]/1.3
         df_CS[0]["Simultaneuos Loads(H)"] = final_df_CS["Simultaneuos Loads(H)"]
         df_CS[0]["Simultaneuos Loads(C)"] = final_df_CS["Simultaneuos Loads(C)"]
-        # final_df_CS["Simultaneuos Loads(H)"] =final_df_CS[["CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)"]].min(axis=1)
+        # final_df_CS["Simultaneuos Loads(H)"] =final_df_CS[["Total Heating Loads","CS Cooling Loads(kBtu)"]].min(axis=1)
         max_simult_h_load = round(final_df_CS["Simultaneuos Loads(H)"].max())
         max_simult_c_load = round(final_df_CS["Simultaneuos Loads(C)"].max())
         total_simult_h_load = round(final_df_CS["Simultaneuos Loads(H)"].sum())
         total_simult_c_load = round(final_df_CS["Simultaneuos Loads(C)"].sum())
-        total_heating_load = round(final_df_CS["CS Heating Loads(kBtu)"].sum())
+        total_heating_load = round(final_df_CS["Total Heating Loads"].sum())
         total_cooling_load = round(final_df_CS["CS Cooling Loads(kBtu)"].sum())
 
         # Check if total_heating_load is 0 before calculating the percentage
