@@ -21,10 +21,10 @@ from functools import reduce
 st.set_page_config(layout="wide")
 # st.set_page_config(layout="centered")
 
-# # Clear cache button
-# if st.button("Clear Cache"):
-#     st.cache_data.clear()
-#     st.success("Cache cleared!")
+# Clear cache button
+if st.button("Clear Cache"):
+    st.cache_data.clear()
+    st.success("Cache cleared!")
 
 @st.cache_data
 def load_data(file_path,sheetName,head_no):
