@@ -158,12 +158,9 @@ def filter_buildings(buildings, selected_buildings):
 def plot_line_charts(timestamp,dfs, building_names,title_chart):
     """Generate line charts for each column in the DataFrame."""
 
-        # Convert the series to datetime for x-axis
-    # st.write(type(timestamp))
-    # st.write(timestamp[:10]) 
-    
-    timestamp = pd.to_datetime(timestamp,errors='coerce')
-    st.write(type(timestamp.iloc[0]))
+    # Convert the series to datetime for x-axis
+    # timestamp = pd.to_datetime(timestamp,errors='coerce')
+
     if building_names != "Aggregated campus":
         for column in dfs[0].columns:  # Assuming all DataFrames have the same columns
 
