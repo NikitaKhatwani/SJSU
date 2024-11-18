@@ -751,7 +751,7 @@ def main():
             aggregate_monthly = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)","Simultaneuos Loads(H)","Simultaneuos Loads(C)"]]
             # aggregate_monthly['timestamp'] = timestamp_TMY
             # Assuming final_df_CS is your DataFrame and 'timestamp_TMY' is the timestamp column
-            aggregate_monthly['timestamp'] = pd.to_datetime(timestamp_TMY)  # Convert to datetime if not already
+            # aggregate_monthly['timestamp'] = pd.to_datetime(timestamp_TMY)  # Convert to datetime if not already
             # Set the timestamp as the index
             aggregate_monthly.set_index('timestamp', inplace=True)
             # Resample and sum by month
