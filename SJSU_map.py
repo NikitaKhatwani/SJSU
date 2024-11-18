@@ -304,7 +304,7 @@ def main():
     buildings = load_data("sjsu_buildings.xlsx","sjsu_buildings",0)
 
     #load timestamp
-    timestamp_TMY = load_data("Hourly Timestamp.xlsx","Sheet1",0)
+    timestamp_TMY = load_data("Hourly TImestamp.xlsx","Sheet1",0)
 
     buildings_TMY_loads = load_data("TMY SJSU Hourly All Buildings_excel_binary.xlsb","TMY SJSU Hourly All Buildings",0)
     # Ensure timestamp is a datetime object
