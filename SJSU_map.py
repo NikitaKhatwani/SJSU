@@ -28,8 +28,15 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def load_data(file_path,sheetName,head_no):
-    # Load data from CSV or any other source
-    data = pd.read_excel(file_path,sheet_name=sheetName,header=head_no)
+    # Determine file extension
+    file_extension = os.path.splitext(file_path)[-1].lower()
+
+    # Use appropriate engine based on file type
+    if file_extension == ".xlsb":
+        data = pd.read_excel(file_path, sheet_name=sheetName, header=head_no, engine="pyxlsb")
+    else:
+        data = pd.read_excel(file_path, sheet_name=sheetName, header=head_no)  # Default engine
+
     return data
 
 #tiles="cartodbpositron",
@@ -296,7 +303,7 @@ def main():
     # Load data
     buildings = load_data("sjsu_buildings.xlsx","sjsu_buildings",0)
 
-    buildings_TMY_loads = load_data("TMY SJSU Hourly All Buildings_excel.xlsx","TMY SJSU Hourly All Buildings",0)
+    buildings_TMY_loads = load_data("TMY SJSU Hourly All Buildings_excel_binary.xlsb","TMY SJSU Hourly All Buildings",0)
     # Ensure timestamp is a datetime object
     buildings_TMY_loads['timestamp'] = pd.to_datetime(buildings_TMY_loads['timestamp'])
     #filter main campus buildings
@@ -566,6 +573,7 @@ def main():
             CS_elec = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"total misc.elec"].reset_index(drop=True)
             CS_heating = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"heating.load.kBtu"].reset_index(drop=True)
             CS_cooling = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"cooling.load.kBtu"].reset_index(drop=True)
+            CS_dhw = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"DHW.load.kBtu"].reset_index(drop=True)
             timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building".lower(),"timestamp"].reset_index(drop=True)
 
             if timestamp.isna().all():
@@ -574,7 +582,7 @@ def main():
    
             # Combine Series into a DataFrame
             data_measured = pd.DataFrame({'Electricity (kWh) Usage': electricity, 'Gas (Therms) Usage': gas, 'Steam (Therms) Usage': steam, "Chilled Water (Ton-Hours)":CHW})
-            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling})
+            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw})
 
             # Create a numbered list
             measured_totalEUI = [round(AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,"measurement.eui.total"].values[0])]
@@ -599,7 +607,8 @@ def main():
 
     if df_CS2:
         # Sum the DataFrames
-        final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
+        final_df_CS = reduce(lambda x, y': x.add(y, fill_value=0), df_CS2)
+        final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
                                                     final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["CS Heating Loads(kBtu)"],
                                                     final_df_CS["CS Heating Loads(kBtu)"],
