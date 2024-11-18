@@ -177,7 +177,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 building_name = building_names[i]
                 
                 building_data = df[column].values
-                st.write("column",column,building_name,len(building_data),len(timestamp))
+                st.write("column",column,building_name,len(building_data),timestamp)
                 chart_data[f'{building_name} ({column})'] = building_data
                 if column == "CS Heating Loads(kBtu)" and i==0:
                     chart_data["Simultaneuos Loads(H)"] = df["Simultaneuos Loads(H)"].values
