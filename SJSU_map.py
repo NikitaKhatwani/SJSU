@@ -230,6 +230,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
         # Create a new figure for the selected buildings
         fig = go.Figure()
         st.write("timestamp",timestamp,dfs)
+        timestamp = pd.to_datetime(timestamp,errors='coerce')
         
         # Prepare data for each building
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
