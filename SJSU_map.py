@@ -264,6 +264,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
             fig.add_trace(
                 go.Scatter(
                     x=timestamp,
+                    st.write("timestamp",timestamp),
                     y=building_data,
                     mode='lines',
                     name=f'{building_names} ({column})',
