@@ -229,7 +229,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
     if building_names == "Aggregated campus":
         # Create a new figure for the selected buildings
         fig = go.Figure()
-        st.write("timestamp",timestamp)
+        st.write("timestamp",timestamp,dfs)
         
         # Prepare data for each building
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
