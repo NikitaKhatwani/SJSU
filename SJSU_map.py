@@ -234,7 +234,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
 
         
         # Initialize a variable to track the cumulative offset
-        cumulative_offset = np.zeros(len(timestamp_TMY))  # Shape: (8760,)
+        cumulative_offset = np.zeros(len(timestamp))  # Shape: (8760,)
         
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
             if 'elec' in column.lower():
