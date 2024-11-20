@@ -247,7 +247,8 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 color = 'rgba(255, 0, 0, 0.5)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
-        
+                st.write("Cumulative Offset Shape:", cumulative_offset.shape)
+                st.write("Building Data Shape:", building_data.shape)
                 # Update the cumulative offset
                 cumulative_offset += building_data
         
