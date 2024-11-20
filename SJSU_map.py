@@ -233,22 +233,28 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
         chart_data['Timestamp'] = timestamp
 
         
-        # Prepare data for each building
+        # Initialize a variable to track the cumulative offset
+        cumulative_offset = np.zeros_like(timestamp)
+        
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
             if 'elec' in column.lower():
                 continue
             dfs[column] = pd.to_numeric(dfs[column], errors='coerce')
             building_data = dfs[column].values
-
+        
             # Assign colors based on column names
             if 'heating' in column.lower():
-
                 color = 'rgba(255, 0, 0, 0.5)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
-
+        
+                # Update the cumulative offset
+                cumulative_offset += building_data
+        
             elif 'dhw' in column.lower():
-                building_data = -building_data  # Mirror image for heating
+                color = 'rgba(255, 165, 0, 0.5)'  # Semi-transparent orange for DHW
+                building_data = -building_data + cumulative_offset  # Stack on top of heating
+                fill = 'tozeroy'
                 
             elif 'cooling' in column.lower():
                 color = 'rgba(0, 0, 255, 0.5)'  # Semi-transparent blue for cooling
