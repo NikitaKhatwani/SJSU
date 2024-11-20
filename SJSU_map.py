@@ -261,7 +261,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
         
             elif 'dhw' in column.lower():
                 color = 'rgba(128, 0, 0, 0.8)'  # Dark maroon for DHW
-                building_data = building_data + cumulative_offset[-1]  # Start after heating
+                building_data = -building_data - cumulative_offset
                 fill = 'tozeroy'
                 
             elif 'cooling' in column.lower():
