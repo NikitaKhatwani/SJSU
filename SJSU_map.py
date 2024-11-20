@@ -243,25 +243,21 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
             building_data = dfs[column].values
         
             # Assign colors based on column names
-            if 'heating' in column.lower():
+            if 'cs heating' in column.lower():
                 color = 'rgba(255, 0, 0, 0.5)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
-                # Ensure cumulative_offset is a 1D array
-                building_data = building_data.flatten() if len(building_data.shape) > 1 else building_data
-                cumulative_offset = cumulative_offset.flatten()
-                
-                # Handle mismatched shapes
-                if cumulative_offset.shape != building_data.shape:
-                    building_data = building_data.reshape(cumulative_offset.shape)
-                st.write("Cumulative Offset Shape:", cumulative_offset.shape,cumulative_offset)
-                st.write("Building Data Shape:", building_data.shape,building_data)
-                # Update the cumulative offset
-                cumulative_offset += -building_data
+
+
+            # Assign colors based on column names
+            elif 'total heating' in column.lower():
+                color = 'rgba(144, 238, 144, 0.5)'  # Semi-transparent red for heating
+                building_data = -building_data  # Mirror image for heating
+                fill = 'tozeroy'  # Fill to zero
         
             elif 'dhw' in column.lower():
                 color = 'rgba(0, 0, 0, 0.5)'  # Light green with 50% transparency for DHW
-                building_data = -building_data - cumulative_offset  # Stack DHW on top of heating
+                building_data = -building_data 
                 fill = 'tozeroy'
                 
             elif 'cooling' in column.lower():
