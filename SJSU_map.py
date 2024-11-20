@@ -257,7 +257,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 st.write("Cumulative Offset Shape:", cumulative_offset.shape,cumulative_offset)
                 st.write("Building Data Shape:", building_data.shape,building_data)
                 # Update the cumulative offset
-                cumulative_offset += building_data
+                cumulative_offset += -building_data
         
             elif 'dhw' in column.lower():
                 color = 'rgba(128, 0, 0, 0.8)'  # Dark maroon for DHW
