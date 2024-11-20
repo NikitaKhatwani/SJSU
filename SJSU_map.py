@@ -247,7 +247,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
 
-            if 'dhw' in column.lower():
+            elif 'dhw' in column.lower():
                 building_data = -building_data  # Mirror image for heating
                 
             elif 'cooling' in column.lower():
