@@ -260,7 +260,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 cumulative_offset += -building_data
         
             elif 'dhw' in column.lower():
-                color = 'rgba(144, 238, 144, 0.5)'  # Light green with 50% transparency for DHW
+                color = 'rgba(0, 0, 0, 0.5)'  # Light green with 50% transparency for DHW
                 building_data = -building_data - cumulative_offset  # Stack DHW on top of heating
                 fill = 'tozeroy'
                 
