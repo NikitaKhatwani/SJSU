@@ -234,7 +234,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
 
         
         # Initialize a variable to track the cumulative offset
-        cumulative_offset = np.zeros_like(timestamp)
+        cumulative_offset = np.zeros(len(timestamp_TMY))  # Shape: (8760,)
         
         for column in dfs.columns:  # Assuming all DataFrames have the same columns
             if 'elec' in column.lower():
@@ -248,13 +248,14 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
                 # Ensure cumulative_offset is a 1D array
+                building_data = building_data.flatten() if len(building_data.shape) > 1 else building_data
                 cumulative_offset = cumulative_offset.flatten()
                 
                 # Handle mismatched shapes
                 if cumulative_offset.shape != building_data.shape:
                     building_data = building_data.reshape(cumulative_offset.shape)
-                st.write("Cumulative Offset Shape:", cumulative_offset.shape)
-                st.write("Building Data Shape:", building_data.shape)
+                st.write("Cumulative Offset Shape:", cumulative_offset.shape,cumulative_offset)
+                st.write("Building Data Shape:", building_data.shape,building_data)
                 # Update the cumulative offset
                 cumulative_offset += building_data
         
