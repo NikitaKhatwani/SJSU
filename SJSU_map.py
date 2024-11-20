@@ -256,9 +256,10 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 fill = 'tozeroy'  # Fill to zero
         
             elif 'dhw' in column.lower():
-                color = 'rgba(0, 0, 0, 0.5)'  # Light green with 50% transparency for DHW
-                building_data = -building_data 
-                fill = 'tozeroy'
+                continue
+                # color = 'rgba(0, 0, 0, 0.5)'  # Light green with 50% transparency for DHW
+                # building_data = -building_data 
+                # fill = 'tozeroy'
                 
             elif 'cooling' in column.lower():
                 color = 'rgba(0, 0, 255, 0.5)'  # Semi-transparent blue for cooling
