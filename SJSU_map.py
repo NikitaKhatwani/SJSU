@@ -269,11 +269,11 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 fill = 'tozeroy'  # Fill to zero
             elif  "Simultaneuos Loads(H)".lower() in column.lower():
 
-                color = 'rgba(255, 165, 0, 0.5)'  # Semi-transparent orange
+                color = 'rgba(255, 165, 0, 1)'  # Semi-transparent orange
                 building_data = -building_data
                 fill = 'tozeroy'
             elif "Simultaneuos Loads(C)".lower() in column.lower():
-                color = 'rgba(255, 165, 0, 0.5)'  # Light blue
+                color = 'rgba(255, 165, 0, 1)'  # Light blue
                 fill = 'tozeroy'
             else:
                 color = 'black'  # Default color if none match
