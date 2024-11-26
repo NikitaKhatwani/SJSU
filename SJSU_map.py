@@ -255,7 +255,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 
             # Assign colors based on column names
             elif 'space heating + dhw' in column.lower():
-                color = 'rgba(255, 192, 203,0.5)'  # Semi-transparent red for heating
+                color = 'rgba(231, 84, 128,0.5)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
 
@@ -289,12 +289,20 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 color = 'black'  # Default color if none match
                 fill = 'tozeroy'
 
+
+            if 'space heating + dhw' in column.lower():
+                legend_name = 'dhw'
+
+            elif cs heating' in column.lower():
+                legend_name = 'CS space heating'
+            else:
+                legend_name = f'{building_names} ({column})'
             fig.add_trace(
                 go.Scatter(
                     x=chart_data['Timestamp'],
                     y=building_data,
                     mode='lines',
-                    name=f'{building_names} ({column})',
+                    name=legend_name,
                     line=dict(color=color),
                     fill=fill,  # Fill to zero
                     fillcolor=color  # Use the defined color for the fill
