@@ -244,7 +244,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
         
             # Assign colors based on column names
             if 'cs heating' in column.lower():
-                color = 'rgba(255, 0, 0, 0.8)'  # Semi-transparent red for heating
+                color = 'rgba(255, 0, 0, 1)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
 
@@ -255,7 +255,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 
             # Assign colors based on column names
             elif 'space heating + dhw' in column.lower():
-                color = 'rgba(255, 165, 0, 0.5)'  # Semi-transparent red for heating
+                color = 'rgba(255, 192, 203,0.5)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
 
