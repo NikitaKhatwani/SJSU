@@ -247,7 +247,12 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
                 color = 'rgba(255, 0, 0, 0.8)'  # Semi-transparent red for heating
                 building_data = -building_data  # Mirror image for heating
                 fill = 'tozeroy'  # Fill to zero
-
+                
+            # Assign colors based on column names
+            elif 'space Heating + dhw' in column.lower():
+                color = 'rgba(255, 165, 0, 0.5)'  # Semi-transparent red for heating
+                building_data = -building_data  # Mirror image for heating
+                fill = 'tozeroy'  # Fill to zero
 
             # Assign colors based on column names
             elif 'total heating' in column.lower():
@@ -597,6 +602,7 @@ def main():
             CS_heating = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"heating.load.kBtu"].reset_index(drop=True)
             CS_cooling = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"cooling.load.kBtu"].reset_index(drop=True)
             CS_dhw = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"DHW.load.kBtu"].reset_index(drop=True)
+            CS_otherProcess = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"OtherProcess.load.kBtu"].reset_index(drop=True)
             # timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building".lower(),"timestamp"].reset_index(drop=True)
             timestamp_TMY = timestamp_hourly
 
@@ -606,7 +612,7 @@ def main():
    
             # Combine Series into a DataFrame
             data_measured = pd.DataFrame({'Electricity (kWh) Usage': electricity, 'Gas (Therms) Usage': gas, 'Steam (Therms) Usage': steam, "Chilled Water (Ton-Hours)":CHW})
-            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw})
+            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw,"Other Heating Proces(kBtu)":CS_otherProces})
 
             # Create a numbered list
             measured_totalEUI = [round(AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,"measurement.eui.total"].values[0])]
@@ -632,7 +638,8 @@ def main():
     if df_CS2:
         # Sum the DataFrames
         final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
-        final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
+        final_df_CS["Space Heating + DHW"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
+        final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"] + final_df_CS["Other Heating Proces(kBtu)"]
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
                                                     final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["Total Heating Loads"],
                                                     final_df_CS["Total Heating Loads"],
@@ -761,13 +768,13 @@ def main():
 
     if selected_aggregated_loads:
         if df_CS2:
-            aggregate_selected_df = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)","CS DHW Loads(kBtu)","Total Heating Loads","Simultaneuos Loads(H)","Simultaneuos Loads(C)"]]
+            aggregate_selected_df = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)","CS DHW Loads(kBtu)","Other Heating Proces(kBtu)","Total Heating Loads","Simultaneuos Loads(H)","Simultaneuos Loads(C)"]]
 
 
             
             aggregate_monthly = pd.DataFrame()
 
-            aggregate_monthly = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)","CS DHW Loads(kBtu)","Total Heating Loads","Simultaneuos Loads(H)","Simultaneuos Loads(C)"]]
+            aggregate_monthly = final_df_CS[["CS Electricity Loads(kBtu)","CS Heating Loads(kBtu)","CS Cooling Loads(kBtu)","CS DHW Loads(kBtu)","Other Heating Proces(kBtu)","Total Heating Loads","Simultaneuos Loads(H)","Simultaneuos Loads(C)"]]
             aggregate_monthly['timestamp'] = timestamp_TMY
             # Assuming final_df_CS is your DataFrame and 'timestamp_TMY' is the timestamp column
             # aggregate_monthly['timestamp'] = pd.to_datetime(timestamp_TMY)  # Convert to datetime if not already
