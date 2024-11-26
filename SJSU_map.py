@@ -612,7 +612,7 @@ def main():
    
             # Combine Series into a DataFrame
             data_measured = pd.DataFrame({'Electricity (kWh) Usage': electricity, 'Gas (Therms) Usage': gas, 'Steam (Therms) Usage': steam, "Chilled Water (Ton-Hours)":CHW})
-            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw,"Other Heating Proces(kBtu)":CS_otherProces})
+            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw,"Other Heating Proces(kBtu)":CS_otherProcess})
 
             # Create a numbered list
             measured_totalEUI = [round(AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,"measurement.eui.total"].values[0])]
@@ -639,7 +639,6 @@ def main():
         # Sum the DataFrames
         final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
         final_df_CS["Space Heating + DHW"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
-        st.write("sss",final_df_CS["Space Heating + DHW"] )
         final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"] + final_df_CS["Other Heating Proces(kBtu)"]
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
                                                     final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["Total Heating Loads"],
