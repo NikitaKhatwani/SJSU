@@ -293,7 +293,7 @@ def plot_line_charts(timestamp,dfs, building_names,title_chart):
             if 'space heating + dhw' in column.lower():
                 legend_name = 'dhw'
 
-            elif cs heating' in column.lower():
+            elif 'cs heating' in column.lower():
                 legend_name = 'CS space heating'
             else:
                 legend_name = f'{building_names} ({column})'
