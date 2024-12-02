@@ -652,6 +652,10 @@ def main():
     if df_CS2:
         # Sum the DataFrames
         final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
+        # Replace None (or NaN) with 0 in the relevant columns
+        final_df_CS[["CS Heating Loads(kBtu)", "CS DHW Loads(kBtu)", "Other Heating Process(kBtu)"]] = (
+            final_df_CS[["CS Heating Loads(kBtu)", "CS DHW Loads(kBtu)", "Other Heating Process(kBtu)"]].fillna(0)
+        )
         final_df_CS["Space Heating + DHW"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
         final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"] + final_df_CS["Other Heating Process(kBtu)"]
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
