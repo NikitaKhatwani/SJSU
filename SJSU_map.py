@@ -616,6 +616,7 @@ def main():
             CS_cooling = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"cooling.load.kBtu"].reset_index(drop=True)
             CS_dhw = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"DHW.load.kBtu"].reset_index(drop=True)
             CS_otherProcess = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"OtherProcess.load.kBtu"].reset_index(drop=True)
+            CS_pool = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]==building_name,"Pool.load.kBtu"].reset_index(drop=True)
             # timestamp_TMY = buildings_TMY_loads.loc[buildings_TMY_loads["building_name"]=="4th Street Building".lower(),"timestamp"].reset_index(drop=True)
             timestamp_TMY = timestamp_hourly
 
@@ -625,7 +626,7 @@ def main():
    
             # Combine Series into a DataFrame
             data_measured = pd.DataFrame({'Electricity (kWh) Usage': electricity, 'Gas (Therms) Usage': gas, 'Steam (Therms) Usage': steam, "Chilled Water (Ton-Hours)":CHW})
-            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw,"Other Heating Process(kBtu)":CS_otherProcess})
+            data_TMY_CS = pd.DataFrame({'CS Electricity Loads(kBtu)': CS_elec,"CS Heating Loads(kBtu)":CS_heating,"CS Cooling Loads(kBtu)":CS_cooling,"CS DHW Loads(kBtu)":CS_dhw,"Other Heating Process(kBtu)":CS_otherProcess,"CS Pool(kBtu}":CS_pool)
 
             # Create a numbered list
             measured_totalEUI = [round(AEDA_buildings_data.loc[AEDA_buildings_data["metadata.building_name"]==building_name,"measurement.eui.total"].values[0])]
