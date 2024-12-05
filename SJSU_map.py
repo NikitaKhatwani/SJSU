@@ -657,7 +657,7 @@ def main():
             final_df_CS[["CS Heating Loads(kBtu)", "CS DHW Loads(kBtu)", "Other Heating Process(kBtu)"]].fillna(0)
         )
         final_df_CS["Space Heating + DHW"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
-        final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"] + final_df_CS["Other Heating Process(kBtu)"]
+        final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"] + final_df_CS["Other Heating Process(kBtu)"] +final_df_CS["CS Pool(kBtu}"]
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
                                                     final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["Total Heating Loads"],
                                                     final_df_CS["Total Heating Loads"],
