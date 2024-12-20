@@ -658,7 +658,7 @@ def main():
         )
         final_df_CS["Space Heating + DHW"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"]
         final_df_CS["Total Heating Loads"] = final_df_CS["CS Heating Loads(kBtu)"] + final_df_CS["CS DHW Loads(kBtu)"] + final_df_CS["Other Heating Process(kBtu)"] +final_df_CS["CS Pool(kBtu}"]
-        st.write(round(final_df_CS["Total Heating Loads"].sum()))
+        st.write(1,round(final_df_CS["Total Heating Loads"].sum()))
         final_df_CS["Simultaneuos Loads(H)"] = np.where(
                                                     final_df_CS["CS Cooling Loads(kBtu)"] * 1.3 > final_df_CS["Total Heating Loads"],
                                                     final_df_CS["Total Heating Loads"],
@@ -673,6 +673,7 @@ def main():
         total_simult_h_load = round(final_df_CS["Simultaneuos Loads(H)"].sum())
         total_simult_c_load = round(final_df_CS["Simultaneuos Loads(C)"].sum())
         total_heating_load = round(final_df_CS["Total Heating Loads"].sum())
+        st.write(2,round(total_heating_load))
         total_cooling_load = round(final_df_CS["CS Cooling Loads(kBtu)"].sum())
 
         # Check if total_heating_load is 0 before calculating the percentage
@@ -694,6 +695,7 @@ def main():
         results_df_CS.at[0,"Total Simultaneuos Cooling Loads"] = total_simult_c_load
         results_df_CS["Total Heating Loads"] =pd.NA
         results_df_CS.at[0,"Total Heating Loads"] = total_heating_load
+        st.write(3,round(results_df_CS.at[0,"Total Heating Loads"]))
         results_df_CS.at[1,"Total Simultaneuos Heating Loads"] = f"{round(percent_sim_heating, 1)}%"
         results_df_CS["Total Cooling Loads"] =pd.NA
         results_df_CS.at[0,"Total Cooling Loads"] = total_cooling_load
