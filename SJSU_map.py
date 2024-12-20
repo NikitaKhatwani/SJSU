@@ -651,6 +651,7 @@ def main():
 
     if df_CS2:
         # Sum the DataFrames
+        st.write(check_df,df_CS2)
         final_df_CS = reduce(lambda x, y: x.add(y, fill_value=0), df_CS2)
         # Replace None (or NaN) with 0 in the relevant columns
         final_df_CS[["CS Heating Loads(kBtu)", "CS DHW Loads(kBtu)", "Other Heating Process(kBtu)"]] = (
